@@ -13,39 +13,67 @@
   src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
 }
 
+/*   margin: 10px 100px;
+ */
+
 @media screen and (max-width: 900px) {
   .container {
-    margin: 20px 20px;
+    margin: 10px 20px !important;
+    flex-direction: row;
     /* background-color: aqua; */
   }
   nav {
     display: none;
+  }
+  .section1 {
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .underMainPicture {
+    flex-direction: column;
+  }
+
+  .sideNew {
+    margin-top: 20px;
+    margin-left: 0px !important;
+  }
+  .section2 {
+    flex-direction: column;
+    /* background-color: blueviolet; */
+  }
+  .bloc {
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .container {
-    flex-direction: row;
-    display: flex;
-    height: auto;
+    margin: auto !important;
+
     /* background-color: aqua; */
   }
   nav {
-    background-color: blue;
-    display: none;
+    /* background-color: blue; */
+    display: none !important;
+  }
+  .title {
+    font-size: 30px !important;
+    margin-bottom: 15px;
+  }
+  .pictureFrame {
+    margin-top: 20px;
+  }
+
+  .main-picture {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: auto;
   }
 }
 
 body {
   font-family: 'regularFont';
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  /* grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr 0.1fr; */
-  /* grid-template-areas:
-    'navbar navbar navbar navbar'
-    'main main sideNew'
-    'title content sideNew'
-    'footer footer footer'
-    'attribution attribution attribution'; */
 }
 
 .cursor {
@@ -53,14 +81,14 @@ body {
 }
 
 .container {
-  margin: 20px 100px;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  margin: 10px 100px;
+  /* flex-direction: column; */
 }
 
 header {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: space-between;
   height: 60px;
 }
@@ -87,12 +115,13 @@ nav {
 .section1 {
   display: flex;
   flex: 3;
+  /* background-color: bisque; */
 }
 
 .containerSection1 {
   flex: 2;
-  flex-direction: column;
-  margin-right: 20px;
+  /* flex-direction: column; */
+  /* margin-right: 20px; */
 }
 
 .main-picture {
@@ -100,7 +129,7 @@ nav {
   -o-object-fit: contain;
   object-fit: contain;
 }
-
+/* a garder en tete a retirer pour le media querie */
 .underMainPicture {
   margin-top: 25px;
   display: flex;
@@ -145,6 +174,7 @@ button {
 }
 
 .sideNew {
+  margin-left: 10px;
   flex: 1;
   background-color: hsl(240, 100%, 5%);
   padding: 0px 20px 20px 20px;
@@ -175,15 +205,13 @@ h3 {
 
 .section2 {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin: 25px 0px;
   flex: 3;
+  margin: 20px 0px 20px 0px;
 }
 
 .bloc {
   display: flex;
-  flex-direction: row;
   flex: 1;
 }
 
@@ -193,9 +221,9 @@ h3 {
   padding-right: 20px;
 }
 
-.blocText {
+/* .blocText {
   flex-direction: column;
-}
+} */
 
 .blocNumber {
   font-size: 21px;
