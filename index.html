@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | News homepage</title>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js  
+    "
+    ></script>
+
+    <script src="./index.js"></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- élément de la navbar log + nav -->
+      <header class="navbar">
+        <img class="logo" src="./assets/images/logo.svg" alt="logo" />
+
+        <nav>
+          <div id="nav" class="cursor">Home</div>
+          <div id="nav" class="cursor">New</div>
+          <div id="nav" class="cursor">Popular</div>
+          <div id="nav" class="cursor">Trending</div>
+          <div id="nav" class="cursor">Categories</div>
+        </nav>
+      </header>
+      <div>
+        <!-- partie du milieu -->
+        <section class="section1">
+          <div class="containerSection1">
+            <div>
+              <img
+                class="main-picture"
+                src="./assets/images/image-web-3-desktop.jpg"
+                alt="main-picture"
+              />
+            </div>
+            <div class="underMainPicture">
+              <div class="title">
+                The Bright Future of Web 3.0?
+              </div>
+              <div class="content">
+                <div class="description">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </div>
+                <div class="buttonStyle">
+                  <button id="button" type="button" class="cursor">
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sideNew">
+            <h2>
+              New
+            </h2>
+            <h3 id="new" class="cursor">
+              Hydrogen VS Electric Cars
+            </h3>
+
+            <span class="descriptionNew">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </span>
+            <div class="border"></div>
+            <h3 id="new" class="cursor">
+              The Downsides of AI Artistry
+            </h3>
+            <span class="descriptionNew">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </span>
+            <div class="border"></div>
+            <h3 id="new" class="cursor">
+              Is VC Funding Drying Up?
+            </h3>
+            <span class="descriptionNew">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </span>
+          </div>
+        </section>
+
+        <section class="section2">
+          <div class="bloc">
+            <img class="blocImage" src="./assets/images/image-retro-pcs.jpg" />
+            <div class="blocText">
+              <div class="blocNumber">
+                01
+              </div>
+              <div id="bottom-title" class="cursor blocTitle">
+                Reviving Retro PCs
+              </div>
+              <span class="blocDescription">
+                What happens when old PCs are given modern upgrades?
+              </span>
+            </div>
+          </div>
+          <div class="bloc">
+            <img
+              class="blocImage"
+              src="./assets/images/image-top-laptops.jpg"
+            />
+            <div class="blocText">
+              <div class="blocNumber">
+                02
+              </div>
+              <div id="bottom-title" class="cursor blocTitle">
+                Top 10 Laptops of 2022
+              </div>
+              <span class="blocDescription">
+                Our best picks for various needs and budgets.
+              </span>
+            </div>
+          </div>
+          <div class="bloc">
+            <img
+              class="blocImage"
+              src="./assets/images/image-gaming-growth.jpg"
+            />
+            <div class="blocText">
+              <div class="blocNumber">
+                03
+              </div>
+              <div id="bottom-title" class="cursor blocTitle">
+                The Growth of Gaming
+              </div>
+              <span class="blocDescription">
+                How the pandemic has sparked fresh opportunities.
+              </span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.evogue.fr" target="_blank">
+          Julien Lebron
+        </a>
+        . Coded by
+        <a href="#">Inès</a>
+        .
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+@font-face {
+  font-family: regularFont;
+  src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: boldFont;
+  src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: extraBold;
+  src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    margin: 20px 20px;
+    /* background-color: aqua; */
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    flex-direction: row;
+    display: flex;
+    height: auto;
+    /* background-color: aqua; */
+  }
+  nav {
+    background-color: blue;
+    display: none;
+  }
+}
+
+body {
+  font-family: 'regularFont';
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr 0.1fr; */
+  /* grid-template-areas:
+    'navbar navbar navbar navbar'
+    'main main sideNew'
+    'title content sideNew'
+    'footer footer footer'
+    'attribution attribution attribution'; */
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.container {
+  margin: 20px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: hsl(236, 13%, 42%);
+}
+
+.nav-style {
+  font-size: 12px;
+}
+.logo {
+  height: 30px;
+  width: 50px;
+  background-size: cover;
+  align-self: center;
+}
+
+.section1 {
+  display: flex;
+  flex: 3;
+}
+
+.containerSection1 {
+  flex: 2;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.main-picture {
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.underMainPicture {
+  margin-top: 25px;
+  display: flex;
+}
+
+.title {
+  font-size: 38px;
+  flex: 1;
+  margin-right: 10px;
+  font-family: extraBold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.description {
+  font-size: 11px;
+  color: hsl(236, 13%, 42%);
+  line-height: 20px;
+}
+
+.buttonStyle {
+  margin-top: 20px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+button {
+  width: 130px;
+  height: 35px;
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  border: none;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.sideNew {
+  flex: 1;
+  background-color: hsl(240, 100%, 5%);
+  padding: 0px 20px 20px 20px;
+}
+
+h2 {
+  color: hsl(35, 77%, 62%);
+  font-family: boldFont;
+}
+h3 {
+  font-size: 12px;
+  color: hsl(36, 100%, 99%);
+  font-family: boldFont;
+}
+
+.border {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  color: hsl(236, 13%, 42%);
+}
+
+.descriptionNew {
+  font-size: 10px;
+  color: hsl(233, 8%, 79%);
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px 0px;
+  flex: 3;
+}
+
+.bloc {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.blocImage {
+  width: 70px;
+  height: 85px;
+  padding-right: 20px;
+}
+
+.blocText {
+  flex-direction: column;
+}
+
+.blocNumber {
+  font-size: 21px;
+  color: hsl(233, 8%, 79%);
+  font-family: boldFont;
+}
+
+.blocTitle {
+  font-size: 12px;
+  color: hsl(240, 100%, 5%);
+  margin: 5px 0 5px 0;
+  font-family: boldFont;
+}
+
+.blocDescription {
+  color: hsl(236, 13%, 42%);
+  font-size: 10px;
+}
+
+.attribution {
+  /* background-color: green; */
+  font-size: 12px;
+  text-align: center;
+  font-family: 'regularFont';
+  grid-area: 'attribution';
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
