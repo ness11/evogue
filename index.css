@@ -23,7 +23,7 @@
     /* background-color: aqua; */
   }
   nav {
-    display: none;
+    display: flex;
   }
   .section1 {
     margin: auto;
@@ -49,13 +49,54 @@
 
 @media screen and (max-width: 425px) {
   .container {
-    margin: auto !important;
+    margin: 10px !important;
 
     /* background-color: aqua; */
   }
   nav {
-    /* background-color: blue; */
-    display: none !important;
+    display: none;
+    width: 100% !important;
+    position: absolute;
+    height: 100vh !important;
+    right: 0;
+    left: 0;
+  }
+
+  .burgerContent {
+    width: 90% !important;
+    height: 100vh !important;
+    flex-direction: column;
+    background-color: white;
+    display: flex;
+    padding-left: 20px;
+    justify-content: center !important;
+    /* margin-right: -200%; */
+  }
+
+  nav #nav {
+    margin-bottom: 25px;
+    color: hsl(240, 100%, 5%);
+  }
+
+  .closeMenu {
+    display: block !important;
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    /* opacity: 0; */
+  }
+  header {
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+  }
+  .burgerMenu {
+    display: flex !important;
+    align-self: center;
+    padding-right: 35px;
   }
   .title {
     font-size: 30px !important;
@@ -88,7 +129,7 @@ body {
 
 header {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   justify-content: space-between;
   height: 60px;
 }
@@ -96,6 +137,7 @@ header {
 nav {
   display: flex;
   width: 300px;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
@@ -112,6 +154,20 @@ nav {
   align-self: center;
 }
 
+.burgerMenu {
+  display: none;
+}
+
+.burgerContent {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.closeMenu {
+  display: none;
+}
 .section1 {
   display: flex;
   flex: 3;
