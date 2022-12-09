@@ -35,7 +35,7 @@ $(document).ready(function ($) {
 		},
 	);
 
-	if ($(window).width() <= 425) {
+	if (window.matchMedia('(max-width: 425px)').matches) {
 		$('nav').hide(function () {
 			$(this).css('display', 'none !important');
 		});
