@@ -36,7 +36,9 @@ $(document).ready(function ($) {
 	);
 
 	if ($(window).width() <= 425) {
-		$('nav').hide();
+		$('nav').hide(function () {
+			$(this).css('display', 'none !important');
+		});
 		$('.burgerMenu').on('click', function () {
 			$('nav').toggle(function () {});
 		});
